@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: arm-none-eabi-gcc build active file",
+			"command": "/usr/bin/arm-none-eabi-gcc",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-I${fileDirname}/ChibiOS_3.0.5/os/common/ports/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk",
+				"-I${fileDirname}/ChibiOS_3.0.5/os/hal/hal.mk",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+				"-I${fileDirname}/ChibiOS_3.0.5/",
+
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/arm-none-eabi-gcc"
+		}
+	]
+}
